@@ -1,0 +1,52 @@
+{
+  "model": "convaiinnovations/laya",
+  "revision": "c5d78730f3493e4fe16d61507ef4b78eef7318cf",
+  "onnx": "model.onnx",
+  "comparisons": [
+    {
+      "case": 0,
+      "question": "department",
+      "options": 3,
+      "tokens": 40,
+      "expected": 0,
+      "actual": 0,
+      "maxProbabilityError": 4.2176805436611176e-05
+    },
+    {
+      "case": 0,
+      "question": "refund",
+      "options": 2,
+      "tokens": 46,
+      "expected": 1,
+      "actual": 1,
+      "maxProbabilityError": 0.00010031461715698242
+    },
+    {
+      "case": 0,
+      "question": "urgency",
+      "options": 4,
+      "tokens": 45,
+      "expected": 2,
+      "actual": 2,
+      "maxProbabilityError": 0.0007213950157165527
+    },
+    {
+      "case": 1,
+      "question": "difficulty",
+      "options": 12,
+      "tokens": 125,
+      "expected": 1,
+      "actual": 1,
+      "maxProbabilityError": 0.0001016007736325264
+    },
+    {
+      "case": 2,
+      "question": "relevant",
+      "options": 2,
+      "tokens": 512,
+      "expected": 0,
+      "actual": 0,
+      "maxProbabilityError": 2.5987625122070312e-05
+    }
+  ]
+}

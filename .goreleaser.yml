@@ -1,0 +1,21 @@
+version: 2
+
+builds:
+  - id: laya-onnx
+    main: ./cmd/laya-onnx
+    binary: laya-onnx
+    ldflags:
+      - -s -w -X main.version={{.Version}}
+    goos: [darwin, linux]
+    goarch: [amd64, arm64]
+    env:
+      - CGO_ENABLED=0
+
+archives:
+  - formats: [tar.gz]
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  use: github

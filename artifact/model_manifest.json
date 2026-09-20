@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "model": "convaiinnovations/laya",
+  "revision": "c5d78730f3493e4fe16d61507ef4b78eef7318cf",
+  "precision": "fp16",
+  "files": [
+    {
+      "path": "model.onnx",
+      "bytes": 3625692,
+      "sha256": "02ca5cacabb381c00404ce77b29d6fd876185d811adc2d0e7616fb63a24bce3c"
+    },
+    {
+      "path": "model.onnx.data",
+      "bytes": 842072064,
+      "sha256": "3970321cdad29349fca999b6ab2f302472a3f26c54b14d8cc47aae31f03cb31d"
+    },
+    {
+      "path": "rl_agent_config.json",
+      "bytes": 745,
+      "sha256": "ae287b56bbcf5f8c4f4541ae9dfd00c914c4c48b940b8398c3058af37ba92bbd"
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 3583228,
+      "sha256": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30"
+    }
+  ]
+}
