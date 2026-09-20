@@ -4,10 +4,10 @@ github.com/ebitengine/purego v0.9.0 h1:mh0zpKBIXDceC63hpvPuGLiJ8ZAa3DfrFTudmfi8A
 github.com/ebitengine/purego v0.9.0/go.mod h1:iIjxzd6CiRiOG0UyXP+V1+jWqUXVjPKLAI0mRfJZTmQ=
 github.com/gofrs/flock v0.13.0 h1:95JolYOvGMqeH31+FC7D2+uULf6mG61mEZ/A8dRYMzw=
 github.com/gofrs/flock v0.13.0/go.mod h1:jxeyy9R1auM5S6JYDBhDt+E2TCo7DkratH4Pgi8P+Z0=
-github.com/gomlx/compute v0.1.0 h1:17jtrDZMdG1BDm5qubRXbyEHtBSkuACB61YejvUwgZo=
-github.com/gomlx/compute v0.1.0/go.mod h1:MDTT683Wvq7IMSKXDGLvV3Co7HDpx/Xsgp2RbF5lhNM=
-github.com/gomlx/go-huggingface v0.4.1 h1:+Z4HlcoSApckJlaY2QqDe0z/HoqunmlKQXnfxgRWGu4=
-github.com/gomlx/go-huggingface v0.4.1/go.mod h1:X+U/lGGaYAqsIMFjasd/v37kQ8y5FVCzMqAKxlZBBG0=
+github.com/gomlx/compute v0.1.14 h1:r7vPCpi6Pup8kKbfvvpv5H9xy9kcnqulBY0iMuF+cf8=
+github.com/gomlx/compute v0.1.14/go.mod h1:+IyIusGBr70LPqKcULueB2VTTXmJ3HqOdPmRM8O1Sug=
+github.com/gomlx/go-huggingface v0.4.12 h1:HfvqGjYKcBebp/IXpeHVZBWax6/2b+AjblAvMvkPDQU=
+github.com/gomlx/go-huggingface v0.4.12/go.mod h1:GZLcbvOz4YFnrld3oCenp7Kmkg6BijulcAKiFKrCzMY=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
 github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
@@ -18,8 +18,8 @@ github.com/shota3506/onnxruntime-purego v0.0.0-20260315223538-8db8bd7424b2 h1:jW
 github.com/shota3506/onnxruntime-purego v0.0.0-20260315223538-8db8bd7424b2/go.mod h1:jsOuI9QymOruQ9UdLrCbMPFykhI13d5FcuV60R1wJ6Q=
 github.com/stretchr/testify v1.11.1 h1:7s2iGBzp5EwR7/aIZr8ao5+dra3wiQyKjjFuvgVKu7U=
 github.com/stretchr/testify v1.11.1/go.mod h1:wZwfW3scLgRK+23gO65QZefKpKQRnfz6sD981Nm4B6U=
-golang.org/x/sys v0.43.0 h1:Rlag2XtaFTxp19wS8MXlJwTvoh8ArU6ezoyFsMyCTNI=
-golang.org/x/sys v0.43.0/go.mod h1:4GL1E5IUh+htKOUEOaiffhrAeqysfVGipDYzABqnCmw=
+golang.org/x/sys v0.48.0 h1:bbX/i/6MgT9BVLM9RT1thmxL04yeTAhbEz4SyadbXoo=
+golang.org/x/sys v0.48.0/go.mod h1:hNLxWAXmnKAxqDtdwIYC4bM9oQPEecfsnNMuSxOs3og=
 golang.org/x/text v0.39.0 h1:UbZz4pLOvn600D6Oh6GGEI6VAmndrEBLv8/6BEXzyus=
 golang.org/x/text v0.39.0/go.mod h1:3UwRclnC2g0TU9x8PZiyfOajCd1zaUNHF9cvqcQZ+ZM=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
