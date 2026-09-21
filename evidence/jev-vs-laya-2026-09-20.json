@@ -1,0 +1,1478 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-21T01:23:47.203956Z",
+  "machine": "MacBook Pro (Apple M3 Max, 16 CPU cores, 128 GB), macOS 26.5.2",
+  "platform": "darwin/arm64",
+  "cases": 50,
+  "questionsPerCase": 3,
+  "measuredRuns": 5,
+  "jevEndpoint": "https://api.typesafe.ai/v1/systemone",
+  "localExecutionProvider": "CoreML + CPU fallback",
+  "local": {
+    "model": "laya-onnx",
+    "correctQuestions": 111,
+    "totalQuestions": 150,
+    "questionAccuracy": 0.74,
+    "departmentCorrect": 38,
+    "departmentAccuracy": 0.76,
+    "refundCorrect": 49,
+    "refundAccuracy": 0.98,
+    "refundPositiveRecall": 1,
+    "refundNegativeRecall": 0.9767441860465116,
+    "refundBalancedAccuracy": 0.9883720930232558,
+    "urgencyCorrect": 24,
+    "urgencyAccuracy": 0.48,
+    "exactCases": 18,
+    "totalCases": 50,
+    "exactCaseAccuracy": 0.36,
+    "stableRepeats": 200,
+    "totalRepeats": 200,
+    "repeatStability": 1,
+    "latencyMeanMs": 399.268369,
+    "latencyP50Ms": 397.189625,
+    "latencyP95Ms": 419.663833,
+    "inputTokens": 58285,
+    "residentMemoryMiB": 3669.96875,
+    "modelLoadMs": 1705.017,
+    "warmupMs": 452.58225
+  },
+  "jev": {
+    "model": "jev-1.13.0",
+    "correctQuestions": 144,
+    "totalQuestions": 150,
+    "questionAccuracy": 0.96,
+    "departmentCorrect": 48,
+    "departmentAccuracy": 0.96,
+    "refundCorrect": 50,
+    "refundAccuracy": 1,
+    "refundPositiveRecall": 1,
+    "refundNegativeRecall": 1,
+    "refundBalancedAccuracy": 1,
+    "urgencyCorrect": 46,
+    "urgencyAccuracy": 0.92,
+    "exactCases": 44,
+    "totalCases": 50,
+    "exactCaseAccuracy": 0.88,
+    "stableRepeats": 200,
+    "totalRepeats": 200,
+    "repeatStability": 1,
+    "latencyMeanMs": 224.018811,
+    "latencyP50Ms": 201.710875,
+    "latencyP95Ms": 311.968333,
+    "inputTokens": 124645,
+    "outputTokens": 20750,
+    "warmupMs": 459.859583
+  },
+  "agreement": 0.76,
+  "agreedQuestions": 114,
+  "totalComparisons": 150,
+  "departmentAgreement": 0.8,
+  "refundAgreement": 0.98,
+  "urgencyAgreement": 0.5,
+  "caseResults": [
+    {
+      "id": "billing-01",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "billing-02",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "billing-03",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "billing-04",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "billing-05",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "billing-06",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "billing-07",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 3
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "billing-08",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "billing-09",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "billing-10",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "technical-01",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "technical-02",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "technical-03",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "technical-04",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "technical-05",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "technical-06",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "technical-07",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "technical-08",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "technical-09",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "technical-10",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-01",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "sales-02",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "sales-03",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "sales-04",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-05",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "sales-06",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-07",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "sales-08",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-09",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "sales-10",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-01",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "account-02",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-03",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "account-04",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "account-05",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "account-06",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-07",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "account-08",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-09",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "account-10",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "shipping-01",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "shipping-02",
+      "expected": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 1
+      },
+      "local": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-03",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-04",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "shipping-05",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "shipping-06",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-07",
+      "expected": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-08",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "shipping-09",
+      "expected": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 2
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "shipping-10",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      }
+    }
+  ],
+  "localLatencySamplesMs": [
+    439.089208,
+    419.663833,
+    390.279667,
+    392.95425,
+    394.905208,
+    404.933833,
+    402.785458,
+    380.835541,
+    404.269542,
+    398.587917,
+    391.897083,
+    401.888542,
+    386.85075,
+    394.46625,
+    386.462292,
+    391.6905,
+    394.622375,
+    387.533666,
+    402.669166,
+    379.177541,
+    394.884041,
+    397.189625,
+    401.389834,
+    378.333084,
+    387.499584,
+    389.718584,
+    404.452875,
+    402.328125,
+    389.74075,
+    402.532791,
+    394.151166,
+    384.547916,
+    387.618709,
+    379.630125,
+    403.364875,
+    389.568958,
+    383.292583,
+    374.577084,
+    379.683625,
+    374.629667,
+    387.186125,
+    383.669042,
+    381.305417,
+    389.378708,
+    379.569125,
+    396.239292,
+    387.383625,
+    390.248375,
+    387.873,
+    388.892291,
+    392.914,
+    403.004292,
+    391.594375,
+    393.653667,
+    388.162458,
+    407.841416,
+    415.706459,
+    389.230083,
+    405.052166,
+    402.83825,
+    387.865625,
+    403.513084,
+    394.304125,
+    395.579625,
+    387.569583,
+    386.869375,
+    393.604,
+    390.438458,
+    404.197416,
+    381.868708,
+    389.332042,
+    396.542208,
+    403.847167,
+    391.90675,
+    388.285834,
+    380.954417,
+    404.6285,
+    402.644167,
+    401.544,
+    405.255167,
+    398.171416,
+    384.481958,
+    391.188958,
+    386.799292,
+    408.504625,
+    393.283459,
+    385.383167,
+    379.762709,
+    387.824667,
+    383.257,
+    393.554416,
+    383.579,
+    389.411708,
+    396.996333,
+    395.95275,
+    403.480875,
+    392.97075,
+    385.78925,
+    398.021375,
+    408.46675,
+    402.9845,
+    411.64675,
+    395.65025,
+    402.196875,
+    405.275584,
+    417.406084,
+    407.987708,
+    388.767417,
+    414.188333,
+    417.4805,
+    395.963875,
+    410.789667,
+    397.142583,
+    407.884625,
+    402.057917,
+    403.43225,
+    405.253542,
+    397.080208,
+    410.471334,
+    390.365375,
+    399.653833,
+    404.405333,
+    412.375959,
+    390.110542,
+    402.786166,
+    394.360125,
+    413.828209,
+    413.108125,
+    397.685917,
+    410.840375,
+    409.255125,
+    390.834417,
+    394.714417,
+    388.233833,
+    411.8075,
+    403.924541,
+    388.047375,
+    378.177083,
+    387.890917,
+    383.250875,
+    402.261583,
+    384.607625,
+    389.14975,
+    399.955,
+    389.510625,
+    409.129083,
+    393.52825,
+    385.308333,
+    395.3035,
+    394.841666,
+    403.794625,
+    416.475417,
+    396.385542,
+    399.458625,
+    393.860417,
+    409.779459,
+    411.420041,
+    387.771833,
+    415.893,
+    440.501917,
+    450.849458,
+    438.433125,
+    400.153291,
+    401.324458,
+    397.905833,
+    394.718917,
+    407.783958,
+    400.701292,
+    412.127667,
+    386.997084,
+    402.177125,
+    415.202791,
+    415.772542,
+    390.413791,
+    401.040375,
+    395.814375,
+    423.158833,
+    416.631541,
+    401.206375,
+    414.82125,
+    408.112667,
+    405.363667,
+    400.398208,
+    390.672417,
+    414.982958,
+    403.019959,
+    400.34325,
+    384.712708,
+    389.148792,
+    383.962459,
+    399.22775,
+    396.742583,
+    391.358333,
+    396.029625,
+    389.283083,
+    407.386042,
+    401.639708,
+    398.097125,
+    402.648042,
+    405.512208,
+    416.908834,
+    418.989541,
+    468.584584,
+    425.522333,
+    404.731292,
+    438.232208,
+    442.095458,
+    410.597375,
+    421.94175,
+    435.240292,
+    400.069667,
+    423.124667,
+    402.909958,
+    409.663,
+    397.8745,
+    397.90825,
+    410.271833,
+    399.982875,
+    412.301708,
+    389.35825,
+    399.979625,
+    413.092,
+    414.997292,
+    387.993125,
+    398.183417,
+    391.949042,
+    417.31,
+    413.188791,
+    396.640583,
+    411.951708,
+    402.781958,
+    388.153417,
+    399.834834,
+    386.720708,
+    412.20875,
+    399.843,
+    389.004583,
+    391.224084,
+    388.562292,
+    382.392584,
+    395.663917,
+    386.045917,
+    393.212167,
+    397.06075,
+    388.6615,
+    402.998833,
+    394.501,
+    396.217375,
+    395.589209,
+    396.624125
+  ],
+  "jevLatencySamplesMs": [
+    431.482959,
+    227.05,
+    187.470958,
+    217.854208,
+    192.146709,
+    225.136875,
+    168.204333,
+    157.61,
+    201.710875,
+    167.290083,
+    187.728583,
+    191.200833,
+    167.828458,
+    198.4735,
+    161.984833,
+    228.027709,
+    169.260125,
+    189.326167,
+    186.863125,
+    246.730625,
+    203.32325,
+    196.779333,
+    196.935292,
+    191.580334,
+    258.342834,
+    207.898209,
+    195.451959,
+    250.354292,
+    155.700125,
+    235.28925,
+    209.666417,
+    223.186042,
+    180.637375,
+    159.203917,
+    279.210166,
+    190.861083,
+    215.191834,
+    193.27,
+    257.564291,
+    186.353542,
+    163.706916,
+    174.378625,
+    192.767542,
+    182.051417,
+    170.494916,
+    170.796375,
+    156.568167,
+    204.209167,
+    204.945417,
+    173.638583,
+    190.797917,
+    162.554625,
+    174.076,
+    187.786125,
+    169.267417,
+    160.582375,
+    196.253208,
+    181.500292,
+    197.100959,
+    262.748875,
+    182.825333,
+    232.754375,
+    203.768083,
+    227.121458,
+    200.876333,
+    169.113417,
+    163.915458,
+    191.785542,
+    204.673708,
+    165.593625,
+    196.147166,
+    206.537041,
+    275.865625,
+    179.837291,
+    202.174125,
+    167.67625,
+    190.126083,
+    196.5495,
+    199.513708,
+    207.412667,
+    230.82275,
+    247.218625,
+    161.466791,
+    211.910625,
+    307.366917,
+    213.463916,
+    162.757625,
+    167.46625,
+    197.914291,
+    163.795709,
+    288.404792,
+    264.163166,
+    229.2245,
+    174.096792,
+    164.76375,
+    221.495125,
+    205.842625,
+    288.011459,
+    176.63625,
+    195.818125,
+    213.217083,
+    287.512375,
+    178.020959,
+    290.579375,
+    230.840833,
+    181.105542,
+    224.801583,
+    175.627,
+    183.094417,
+    184.81725,
+    203.859875,
+    191.426417,
+    227.122542,
+    196.151125,
+    165.196042,
+    220.653042,
+    220.887166,
+    245.142416,
+    200.198333,
+    204.57975,
+    154.893167,
+    206.080459,
+    283.056833,
+    150.548625,
+    172.428667,
+    201.490958,
+    265.586916,
+    258.752792,
+    157.882416,
+    251.633125,
+    172.859708,
+    264.559041,
+    221.437667,
+    158.612083,
+    198.299541,
+    210.358375,
+    190.694334,
+    272.079,
+    220.172125,
+    302.951875,
+    220.951584,
+    164.859875,
+    213.056833,
+    311.968333,
+    174.120959,
+    208.718834,
+    161.267917,
+    198.851042,
+    186.074042,
+    258.237167,
+    197.931291,
+    224.630792,
+    199.40125,
+    218.422417,
+    214.480416,
+    184.744208,
+    222.820917,
+    183.798833,
+    207.566041,
+    243.825917,
+    268.245583,
+    255.525667,
+    174.982917,
+    178.087875,
+    201.437334,
+    183.850292,
+    199.101833,
+    191.950083,
+    642.28475,
+    517.098334,
+    336.378917,
+    191.8715,
+    165.289042,
+    208.374042,
+    242.165917,
+    240.453292,
+    178.133417,
+    149.094958,
+    233.813083,
+    235.673292,
+    252.529708,
+    162.408958,
+    356.248875,
+    170.825,
+    174.297625,
+    208.488416,
+    176.7515,
+    181.417542,
+    175.227625,
+    193.536208,
+    214.941,
+    234.632667,
+    558.494625,
+    529.059292,
+    169.719167,
+    248.975125,
+    171.61,
+    266.190959,
+    216.604291,
+    305.770833,
+    215.527625,
+    180.55475,
+    227.713958,
+    256.02775,
+    244.4085,
+    170.074042,
+    280.210875,
+    204.729416,
+    206.786666,
+    202.913083,
+    184.353416,
+    251.06775,
+    190.673291,
+    1397.96475,
+    244.777375,
+    265.778584,
+    180.651959,
+    209.823416,
+    199.546167,
+    218.947,
+    235.738166,
+    185.46,
+    212.952416,
+    227.656833,
+    165.4225,
+    258.273375,
+    194.936042,
+    199.662542,
+    290.719625,
+    202.964917,
+    256.644334,
+    240.058375,
+    208.767709,
+    222.698667,
+    281.151709,
+    196.259042,
+    208.397583,
+    191.246,
+    168.627125,
+    191.070625,
+    450.519667,
+    356.768292,
+    524.605708,
+    174.932375,
+    682.688583,
+    166.150833,
+    166.964917,
+    189.736875,
+    253.707541,
+    267.596791
+  ]
+}

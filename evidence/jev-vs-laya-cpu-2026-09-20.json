@@ -1,0 +1,1178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-21T01:27:43.994204Z",
+  "machine": "MacBook Pro (Apple M3 Max, 16 CPU cores, 128 GB), macOS 26.5.2",
+  "platform": "darwin/arm64",
+  "cases": 50,
+  "questionsPerCase": 3,
+  "measuredRuns": 2,
+  "jevEndpoint": "https://api.typesafe.ai/v1/systemone",
+  "localExecutionProvider": "CPU",
+  "local": {
+    "model": "laya-onnx",
+    "correctQuestions": 111,
+    "totalQuestions": 150,
+    "questionAccuracy": 0.74,
+    "departmentCorrect": 38,
+    "departmentAccuracy": 0.76,
+    "refundCorrect": 49,
+    "refundAccuracy": 0.98,
+    "refundPositiveRecall": 1,
+    "refundNegativeRecall": 0.9767441860465116,
+    "refundBalancedAccuracy": 0.9883720930232558,
+    "urgencyCorrect": 24,
+    "urgencyAccuracy": 0.48,
+    "exactCases": 18,
+    "totalCases": 50,
+    "exactCaseAccuracy": 0.36,
+    "stableRepeats": 50,
+    "totalRepeats": 50,
+    "repeatStability": 1,
+    "latencyMeanMs": 360.28642,
+    "latencyP50Ms": 359.476333,
+    "latencyP95Ms": 375.793708,
+    "inputTokens": 23314,
+    "residentMemoryMiB": 3144.71875,
+    "modelLoadMs": 1383.007875,
+    "warmupMs": 360.299125
+  },
+  "jev": {
+    "model": "jev-1.13.0",
+    "correctQuestions": 144,
+    "totalQuestions": 150,
+    "questionAccuracy": 0.96,
+    "departmentCorrect": 48,
+    "departmentAccuracy": 0.96,
+    "refundCorrect": 50,
+    "refundAccuracy": 1,
+    "refundPositiveRecall": 1,
+    "refundNegativeRecall": 1,
+    "refundBalancedAccuracy": 1,
+    "urgencyCorrect": 46,
+    "urgencyAccuracy": 0.92,
+    "exactCases": 44,
+    "totalCases": 50,
+    "exactCaseAccuracy": 0.88,
+    "stableRepeats": 49,
+    "totalRepeats": 50,
+    "repeatStability": 0.98,
+    "latencyMeanMs": 202.794838,
+    "latencyP50Ms": 193.229041,
+    "latencyP95Ms": 292.918541,
+    "inputTokens": 49858,
+    "outputTokens": 8300,
+    "warmupMs": 522.710625
+  },
+  "agreement": 0.76,
+  "agreedQuestions": 114,
+  "totalComparisons": 150,
+  "departmentAgreement": 0.8,
+  "refundAgreement": 0.98,
+  "urgencyAgreement": 0.5,
+  "caseResults": [
+    {
+      "id": "billing-01",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "billing-02",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "billing-03",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "billing-04",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "billing-05",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "billing-06",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "billing-07",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 3
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "billing-08",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "billing-09",
+      "expected": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "billing-10",
+      "expected": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "billing",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "technical-01",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "technical-02",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "technical-03",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "technical-04",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "technical-05",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "technical-06",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "technical-07",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "technical-08",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "technical-09",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "technical-10",
+      "expected": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-01",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "sales-02",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "sales-03",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "sales-04",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-05",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "sales-06",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 0
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-07",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "sales-08",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "sales-09",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "sales-10",
+      "expected": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "sales",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-01",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "account-02",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-03",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "account-04",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "account-05",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "account-06",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-07",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "account-08",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "account-09",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "technical",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 3
+      }
+    },
+    {
+      "id": "account-10",
+      "expected": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "account",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "account",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "shipping-01",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "shipping-02",
+      "expected": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 1
+      },
+      "local": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-03",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-04",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "shipping-05",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 3
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "shipping-06",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-07",
+      "expected": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 1
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 1
+      }
+    },
+    {
+      "id": "shipping-08",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 0
+      }
+    },
+    {
+      "id": "shipping-09",
+      "expected": {
+        "department": "shipping",
+        "refund": true,
+        "urgency": 2
+      },
+      "local": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      },
+      "jev": {
+        "department": "billing",
+        "refund": true,
+        "urgency": 2
+      }
+    },
+    {
+      "id": "shipping-10",
+      "expected": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "local": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      },
+      "jev": {
+        "department": "shipping",
+        "refund": false,
+        "urgency": 1
+      }
+    }
+  ],
+  "localLatencySamplesMs": [
+    387.423125,
+    370.599417,
+    353.531875,
+    358.179125,
+    353.375333,
+    374.386542,
+    367.293625,
+    345.548292,
+    366.96825,
+    360.662792,
+    356.694458,
+    371.9965,
+    353.892542,
+    361.035917,
+    360.143416,
+    359.351084,
+    363.187042,
+    354.788084,
+    367.627084,
+    344.497083,
+    355.32325,
+    361.023958,
+    376.44225,
+    345.669958,
+    352.788709,
+    345.031458,
+    369.212375,
+    367.728333,
+    357.96275,
+    366.080875,
+    366.532084,
+    347.4295,
+    353.085583,
+    346.58625,
+    372.979875,
+    354.24925,
+    353.246417,
+    341.4795,
+    346.196667,
+    343.701875,
+    353.620667,
+    352.926666,
+    345.667958,
+    353.758209,
+    354.843959,
+    365.68075,
+    359.476333,
+    345.9595,
+    353.262958,
+    353.800042,
+    357.254625,
+    375.793708,
+    354.102625,
+    357.495625,
+    355.137083,
+    369.784416,
+    366.892959,
+    350.029959,
+    368.964375,
+    360.995333,
+    352.132125,
+    367.041292,
+    358.526709,
+    360.647792,
+    358.7885,
+    361.718958,
+    360.033125,
+    354.261875,
+    374.678333,
+    346.221125,
+    354.807625,
+    361.15025,
+    368.934375,
+    348.041083,
+    361.756333,
+    348.715709,
+    373.935125,
+    367.747,
+    363.741083,
+    380.091208,
+    378.682792,
+    351.575666,
+    358.331167,
+    351.073625,
+    376.747166,
+    370.026667,
+    367.849833,
+    348.749791,
+    356.373542,
+    350.492083,
+    365.184208,
+    373.855541,
+    356.859042,
+    367.718292,
+    366.152042,
+    371.833125,
+    370.074375,
+    371.191583,
+    373.271583,
+    370.250042
+  ],
+  "jevLatencySamplesMs": [
+    203.000167,
+    351.907042,
+    148.035333,
+    198.342708,
+    298.852,
+    187.324958,
+    246.771083,
+    188.909167,
+    174.694667,
+    292.918541,
+    148.090375,
+    209.199042,
+    162.711667,
+    183.037166,
+    208.511292,
+    178.099792,
+    174.055084,
+    263.020292,
+    166.181625,
+    232.1985,
+    175.526583,
+    159.536417,
+    215.090208,
+    167.335583,
+    172.954083,
+    245.120333,
+    225.03375,
+    217.9,
+    181.576583,
+    196.158334,
+    194.947583,
+    169.816833,
+    211.201917,
+    198.912541,
+    201.355125,
+    220.188667,
+    162.160167,
+    163.938959,
+    222.430959,
+    197.076917,
+    301.018208,
+    147.982833,
+    246.622417,
+    178.281417,
+    170.450875,
+    193.229041,
+    216.523959,
+    205.480209,
+    215.726375,
+    221.002416,
+    171.413833,
+    215.434417,
+    202.861334,
+    237.542333,
+    233.706959,
+    289.325833,
+    170.674833,
+    182.213208,
+    170.969916,
+    190.96875,
+    170.310292,
+    165.426708,
+    184.42125,
+    174.997292,
+    201.413333,
+    181.507959,
+    177.4455,
+    178.150958,
+    187.127833,
+    285.2645,
+    256.639417,
+    162.028667,
+    538.529458,
+    313.826708,
+    205.784375,
+    204.023333,
+    179.920375,
+    235.952916,
+    213.153125,
+    197.145875,
+    198.476875,
+    155.005042,
+    161.025166,
+    172.625958,
+    173.007875,
+    187.382292,
+    163.298833,
+    203.286792,
+    148.515125,
+    197.997041,
+    196.124875,
+    250.447209,
+    213.928125,
+    151.185958,
+    168.386917,
+    191.082625,
+    171.367416,
+    157.603875,
+    168.099083,
+    162.015709
+  ]
+}

@@ -1,0 +1,8 @@
+torch==2.14.0
+transformers==5.17.0
+onnx==1.23.0
+onnxruntime==1.30.0
+onnxscript==0.7.2
+huggingface-hub==1.32.0
+numpy==2.5.3
+laya @ git+https://github.com/NandhaKishorM/laya.git@42626c348753fbb17572a813127df2278a1ec527

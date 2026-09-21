@@ -1,0 +1,61 @@
+name: Publish model artifact
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+  artifact-metadata: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements-release.txt
+      - run: python -m pip install -r scripts/requirements-release.txt
+      - name: Export pinned model
+        run: python scripts/export_model.py --output build/model
+      - name: Verify deterministic export
+        run: |
+          python scripts/export_model.py --output build/model-repeat
+          diff -u build/model/manifest.json build/model-repeat/manifest.json
+      - name: Validate against upstream
+        run: >-
+          python scripts/validate_model.py
+          --onnx build/model/model.onnx
+          --output build/model/validation.json
+          --baseline evidence/model-c5d78730.json
+      - name: Verify committed manifest
+        run: diff -u artifact/model_manifest.json build/model/manifest.json
+      - name: Write checksums
+        working-directory: build/model
+        run: sha256sum model.onnx model.onnx.data tokenizer.json rl_agent_config.json manifest.json validation.json > checksums.txt
+      - uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: build/model/*
+      - name: Publish immutable release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view model-c5d78730 >/dev/null 2>&1; then
+            echo "release model-c5d78730 already exists" >&2
+            exit 1
+          fi
+          gh release create model-c5d78730 \
+            --title "Laya ONNX c5d78730" \
+            --notes "Pinned FP16 ONNX export of convaiinnovations/laya at c5d78730f3493e4fe16d61507ef4b78eef7318cf. See manifest.json and validation.json." \
+            build/model/model.onnx \
+            build/model/model.onnx.data \
+            build/model/tokenizer.json \
+            build/model/rl_agent_config.json \
+            build/model/manifest.json \
+            build/model/validation.json \
+            build/model/checksums.txt

@@ -1,0 +1,23 @@
+{
+  "state": "I was charged twice and need the duplicate refunded today.",
+  "questions": {
+    "department": {
+      "type": "choice",
+      "instructions": "Which team should handle this?",
+      "criteria": {
+        "billing": "Payments and refunds",
+        "sales": "Purchases",
+        "technical": "Bugs and outages"
+      }
+    },
+    "refund": {
+      "type": "noul",
+      "instructions": "Does the customer ask for money back?"
+    },
+    "urgency": {
+      "type": "score",
+      "instructions": "How urgent is this?",
+      "criteria": ["Not urgent", "Soon", "Urgent", "Critical"]
+    }
+  }
+}
